@@ -1,0 +1,24 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+      
+spring:
+  application:
+    name: demo
+  profiles:
+    active: default
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.30.6.142:3306/security?serverTimezone=Asia/Seoul&useSSL=false
+    username: cos
+    password: cos1234
+
+  jpa:
+    hibernate:
+      ddl-auto: create #create update none
+    show-sql: true
